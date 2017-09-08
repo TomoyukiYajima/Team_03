@@ -6,6 +6,7 @@ using DG.Tweening;
 public class FadeMgr : SingletonBehaviour<FadeMgr>
 {
     [SerializeField] private CanvasGroup m_fadeGroup;
+    [SerializeField] private Image m_loadingBar;
 
     public void FadeIn(float duration, Action action = null)
     {
@@ -27,5 +28,10 @@ public class FadeMgr : SingletonBehaviour<FadeMgr>
                 action();
             }
         });
+    }
+
+    public void FillBar(float amount)
+    {
+        m_loadingBar.fillAmount = amount;
     }
 }
