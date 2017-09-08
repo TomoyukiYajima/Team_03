@@ -32,4 +32,4 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
-$ git rm -r --cached .
+git commit -m ".gitignore is now working"
