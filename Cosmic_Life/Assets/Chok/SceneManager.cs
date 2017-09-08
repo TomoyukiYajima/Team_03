@@ -4,9 +4,9 @@ using UnityEngine.SceneManagement;
 
 public enum SceneType
 {
-    LOGO,
-    TITLE,
-    STAGE,
+    LogoScene,
+    Title,
+    sample,
 }
 
 public class SceneManager : MonoBehaviour {
