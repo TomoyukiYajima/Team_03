@@ -1,6 +1,13 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public enum SceneType
+{
+    LOGO,
+    TITLE,
+    STAGE,
+}
 
 public class SceneManager : MonoBehaviour {
 
